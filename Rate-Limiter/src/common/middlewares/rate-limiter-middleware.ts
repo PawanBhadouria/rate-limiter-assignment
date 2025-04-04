@@ -21,7 +21,7 @@ class RateLimiterMiddleware {
 
     private middleware: any;
     private cacheHandler: CacheHandler
-    // private kafkaProducer : any
+    
 
     constructor() {
         this.init();
@@ -34,7 +34,7 @@ class RateLimiterMiddleware {
         this.middleware = async (req: Request, res: Response, next: NextFunction) => {
             try {
 
-                const userKey = req.userInfo.username; // Can be replaced with token-based key
+                const userKey = req.userInfo.username;
                 const cacheKey = this.generateCacheKey(userKey)
 
 
