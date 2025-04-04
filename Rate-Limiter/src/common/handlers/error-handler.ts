@@ -20,7 +20,7 @@ class ErrorHandler {
     constructor() { }
 
     /**
-    * @author : Omkar Bhoir
+    * @author : Pawan Bhadouria
     * @desc : Handling errors in an application and send back to client.
     * @static
     * @param {object} res : Express response object
