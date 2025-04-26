@@ -10,9 +10,6 @@ RUN npm install
 # Copy source files
 COPY . .
 
-# Build TypeScript files
-RUN npm run build 
-
 # Expose the application port
 EXPOSE 3000
 
